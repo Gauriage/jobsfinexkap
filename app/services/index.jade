@@ -1,0 +1,67 @@
+extends ../includes/head.jade
+block append content
+  .header
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='http://www.finexkap.com')
+            img.logo(src='/images/finexkaplogo-transparent.png')
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="/") Accueil
+            li.active
+              a(href="/services/") Services
+            li
+              a(href="#") Nos Bureaux
+  .banner
+    .row
+      .col-sm-4.col-sm-offset-4.text-center.custom-banner
+        h1(style="font-size:50px") Des compétences diversifiées unies vers un même but
+  .container-services
+    .container.services
+      .row.text-center
+        .col-md-6
+          a(href='datascientist.html').thumbnail
+            h3 Data Science
+            p Nous transformons les données en informations crédit.
+            p.nbpostes 1 poste à pourvoir
+        .col-md-6
+          a(href='directeurmarketing.html').thumbnail
+            h3 Marketing
+            p Nous mettons la disruption au service des entreprises.
+            p.nbpostes 1 poste à pourvoir
+      .row.text-center
+        .col-md-6
+          a(href='#').thumbnail
+            h3 Développement Web
+            p Nous créons la finance de demain en trouvant de nouvelles solutions.
+            p.nbpostes 3 postes à pourvoir
+        .col-md-6
+          a(href='directeurcommercial.html').thumbnail
+            h3 Développement commercial
+            p Nous supprimons les frictions entre notre offre et la demande.
+            p.nbpostes 1 poste à pourvoir       
+      .row.text-center
+        .col-md-6
+          a(href='analystecredit.html').thumbnail
+            h3 Analyse Crédit
+            p Nous nous assurons de la pérénité de nos services.
+            p.nbpostes 2 postes à pourvoir
+        .col-md-6
+          a(href='#').thumbnail
+            h3 Finance
+            p Nous gérons des actifs avec une vision à long terme.
+            p.nbpostes.none 0 poste
+      .row.text-center
+        .col-md-6
+          a(href='#').thumbnail
+            h3 Design
+            p Nous redonnons à la finance un visage.
+            p.nbpostes.none 0 poste
+        .col-md-6
+          a(href='#').thumbnail
+            h3 Administration
+            p Nous mettons tout en oeuvre pour que la machine ne s'arrête jamais.
+            p.nbpostes.none 0 poste
+

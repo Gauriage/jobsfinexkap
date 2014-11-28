@@ -1,0 +1,87 @@
+extends ./includes/head.jade
+block append content
+  .header
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='http://www.finexkap.com')
+            img.logo(src='images/finexkaplogo-transparent.png')
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href="/") Accueil
+            li
+              a(href="/services/") Services
+            li
+              a(href="#") Nos Bureaux
+  .banner
+    .row
+      .col-sm-12.text-center.custom-banner
+        h1 Finexkap recrute !
+        p.lead Rejoignez le leader français de la Fintech
+        include ./includes/postulez.jade
+  .container-valeurs
+    .container.valeurs
+      .row
+        .col-md-4
+          .i.fa.fa-magic.fa-5x
+          h3 Disrupter
+          p Nous développons une nouvelle expérience encore jamais vu dans la finance.
+        .col-md-4
+          .i.fa.fa-signal.fa-5x
+          h3 Se dépasser
+          p Nous donnons le meilleur de nous même pour avoir toujours une longueur d'avance.
+        .col-md-4
+          .i.fa.fa-thumbs-o-up.fa-5x
+          h3 S'amuser
+          p Travailler dur est un plaisir quand on avance en équipe et dans une bonne ambiance.
+  .container.description
+    .row
+      .col-md-12.text-center
+        h1 Ensemble à Finexkap
+      .col-md-8.col-md-offset-2
+        p Le monde de la finance a longtemps été protégé de l'innovation, dominé par quelques acteurs.
+          | Finexkap fédère toutes les personnes souhaitant reprendre le pouvoir sur la finance en apportant
+          | de nouvelles solutions de financement plus proches de nos besoins, et des besoins de l'économie.
+    .row  
+      .col-md-6
+        h2 Rejoignez le leader français de la Fintech
+        p 
+      .col-md-6
+        p
+          img(src="/images/ced_fintech.jpg")
+    .row
+      .col-md-6
+        p
+          img(src="/images/blackwhite.jpg")
+      .col-md-6
+        h2 Le lieu de tous les challenges
+        p Finexkap a été créée en 2012 par Arthur de Catheu et Cédric Teissier, avec deux laptops, une planche de bois et des tréteaux.
+          |  Après seulement deux ans, ce sont plus de 1 000m2 de bureaux que se partage aujourd'hui une équipe de 10 personnes. 
+        p Pour en
+          |  arriver là aujourd'hui, ce sont de nombreux challenges qui ont du être menées afin de lancer une nouvelle solution de financement
+          |  dans un paysage français qui a trop connu le monopole bancaire.
+  .container-full
+    .container.application
+      .row
+        .col-md-8.col-md-offset-2.text-center
+          .h1 Postulez aujourd'hui et changez le monde de la finance
+        .row.text-center
+          .col-md-4
+            ul
+              li Culture de l'apprentissage
+              li Bien-être au travail
+              li Flexibilité des horaires
+          .col-md-4
+            ul
+              li Temps libre personnel
+              li Sorties et happy hours
+              li Matériel informatique haut de gamme
+          .col-md-4
+            ul
+              li Grands espaces de travail
+              li Esprit entrepreneurial
+              li En plein coeur de Paris
+        .row.text-center
+          .col-md-8.col-md-offset-2
+            include ./includes/postulez.jade

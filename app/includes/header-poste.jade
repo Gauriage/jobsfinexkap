@@ -1,0 +1,18 @@
+.header
+  nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='http://www.finexkap.com')
+          img.logo(src='/images/finexkaplogo-transparent.png')
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="/") Accueil
+          li.active
+            a(href="/services/") Services
+          li
+            a(href="#") Nos Bureaux
+.container-poste
+  .container
+    .col-md-6.col-md-offset-3
+      block content

@@ -1,0 +1,21 @@
+extends ../includes/head.jade
+block append content
+  .header
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='http://www.finexkap.com')
+            img.logo(src='/images/finexkaplogo-transparent.png')
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="/") Accueil
+            li.active
+              a(href="/services/") Services
+            li
+              a(href="#") Nos Bureaux
+  .banner
+    .row
+      .col-sm-4.col-sm-offset-4.text-center.custom-banner
+        h1 Venez nous rendre visite
+      iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.870015946856!2d2.3078365!3d48.860689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fd90cc44b91%3A0x153fb58e0aa52b64!2s133B+Rue+de+l&#39;Universit%C3%A9%2C+75007+Paris%2C+France!5e0!3m2!1sen!2s!4v1408967932378" width="800" height="600" frameborder="0" style="border:0")
